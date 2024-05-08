@@ -93,44 +93,32 @@ To save time in this process, the IT team suggested an ML system that detects in
 - [Seaborn](https://seaborn.pydata.org/)
 - [TensorFlow](https://www.tensorflow.org/)
 
+## Softwares used
+
+- Python
+- Juputer Notebooks
+- Streamlit 
+
 ## Credits
 
-- The walthrough project, Malaria Detector project done by Code Institute has been the code that was used to learn how to build this website.
-- The Malaria Detector project code has been used as the base and reference for building the NewsTok project. - [Malaria Detector](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSD101_WTS+2023_Q3/courseware/56a2da0940b4411d8a38c2b093a22c60/4565659a34d648b8b8edd063c3182180/)
-- bootstrap documentation was used for bootstrap research and references. [bootstrap docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
-- Django documentation was used for Django research and references. [django docs](https://docs.djangoproject.com/en/5.0/)
-- w3schools was used for general code concept searches. [w3schools](https://www.w3schools.com/)
-- mdn web docs_ was used for general code concept searches. [mdn web docs_](https://developer.mozilla.org/en-US/)
+- The walthrough project 1, Malaria Detector project done by Code Institute has been the code that was used to learn how to build this project.
+- The Malaria Detector project code has been used as the base and reference for building the NewsTok project. - [Malaria Detector](https://github.com/Code-Institute-Solutions/WalkthroughProject01)
+- The walkthrough project 2, Churnometer project done by Code Institute has been the code that was used to learn the concepts used in this project. [Churnometer](https://github.com/Code-Institute-Solutions/churnometer)
 
 
 ### MEDIA
-- Fonts used on the website. - [google fonts](https://fonts.google.com/) 
-- Fonts used on the website. - [font awesome](https://fontawesome.com/)
-- css used on the website. - [bootstrap](https://getbootstrap.com/)
-- Wireframes were created using Lucidchart's online wireframe maker. - [lucid chart](https://www.lucidchart.com/pages)
-- ERD models were also created using the Lucidchart's online ERD maker. - [lucid chart](https://www.lucidchart.com/pages)
-- Images used on the website. - [pexels](https://www.pexels.com/)
-- The logo used on the website was generated using IconGeneratorAI [icongeneratorai](https://www.icongeneratorai.com/)
-
-### PROJECT SUPPORT
-- I would like to thank my mentor Akshat Garg from Code Institute for his support, guidance, and help in planning and building this project.
-- I would like to thank all the Code Institute tutors for their support, guidance, and help in solving code issues, debugging, and solving all technical issues faced in building this project.
-- I would like to thank Code Institute for providing me with the necessary lessons and resources to help me build my skills to build this project.
-
-- In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
+- The images used in this project are from the cherry-leaves kaggle dataset provided by Code Institute - [cherry_leaves dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)
 
 ### Content
 
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+- The Business case assessment were provided by Code Institute.
+- Business Requirements were provided by Code Institute.
+- The dataset used in this project is the cherry-leaves kaggle dataset provided by Code Institute - [cherry_leaves dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).
 
-### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
+### PROJECT SUPPORT
+- I would like to thank the Code Institute and all other members on the project-portfolio-5-predictive-analytics on slack for their support and guidance in building this project.
+- I would like to thank my mentor Rohit Sharma from Code Institute for his support, guidance, and help in planning and building this project.
+- I would like to thank all the Code Institute tutors for their support, guidance, and help in solving code issues, debugging, and solving all technical issues faced in building this project.
+- I would like to thank Code Institute for providing me with the necessary lessons and resources to help me build my skills to build this project.
 
-## Acknowledgements (optional)
-
-- Thank the people who provided support throughout this project.
