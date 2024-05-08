@@ -22,15 +22,18 @@ def page_leaf_visualizer_body():
       avg_mildew = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
 
       st.warning(
-        f"* We notice the average and variability images did not show "
-        f"patterns where we could intuitively differentiate one from another. " 
-        f"However, a small difference in the colour pigment of the average images is seen for both labels.")
+        f"* We notice the average and variability images shows very slight "
+        f"patterns across the surface from the white spots found on leaves containing "
+        f"powery mildew, where we could intuitively differentiate one from another. "
+        f"Although we found our dataset to have healthy leaves to mostly point upwards, "
+        f"This does not help in predicting, as it is not a distinct feature in prediction. " 
+        f"We are unable to find any other distinctive patterns visually from the images.")
 
       st.image(avg_healthy, caption='Healthy leaf - Average and Variability')
       st.image(avg_mildew, caption='Powdery Mildew affected leaf - Average and Variability')
       st.write("---")
 
-    if st.checkbox("Differences between average healthy and average powdery mildew affected leafs"):
+    if st.checkbox("Differences between average healthy and average powdery mildew affected leaves"):
           diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
           st.warning(
