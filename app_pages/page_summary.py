@@ -20,7 +20,7 @@ def page_summary_body():
         f"As a result, this manual process is not scalable due to time spent in the manual process inspection.\n\n"
         f"**Project Dataset**\n"
         f"* The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops."
-        f"The available dataset contains 2208 images of \n"
+        f"The available dataset contains 4208 images of \n"
         f"healthy and powdery mildew containing leaves.")
 
     st.write(

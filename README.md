@@ -6,41 +6,7 @@ Welcome,
 
 This is the Code Institute student template for the Cherry Leaves project option in Predictive Analytics. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
 
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
 
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-1. Log into your cloud IDE with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and `pip3 install -r requirements.txt`
-
-1. Open the jupyter_notebooks directory, and click on the notebook you want to open.
-
-1. Click the kernel button and choose Python Environments.
-
-Note that the kernel says Python 3.8.18 as it inherits from the workspace, so it will be Python-3.8.18 as installed by our template. To confirm this, you can use `! python --version` in a notebook code cell.
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, then you can create a new one with _Regenerate API Key_.
 
 ## Dataset Content
 
@@ -60,13 +26,40 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 - List here your project hypothesis(es) and how you envision validating it (them).
 
+- The available dataset contains 4208 images of healthy and powdery mildew containing leaves.
+
+- We suspect powdery mildew contained leaves have clear marks/signs, typically the leaf is not so fresh and has discoloration and shows signs of a dying leaf. Small white spots on both the surface and the underside of leaves can be noticed, that can differentiate them from an healthy leaf. An Image Montage shows that typically a powdery mildew leaf has white spots across it. Average Image, Variability Image and Difference between Averages studies did not reveal any clear pattern to differentiate one from another.
+
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
 - List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
 
+- **Business Requirement 1**: Data Visualization
+
+  - We will display the "mean" and "standard deviation" images for healthy and powdery mildew contained leaves.
+  - We will display the difference between an average healthy leaf and an powdery mildew contained leaf.
+  - We will display an image montage for either healthy or owdery mildew contained leaves.
+
+- **Business Requirement 2**: Classification
+  - We want to predict if a given leaf is healthy or contains powdery mildew.
+  - We want to build a binary classifier and generate reports.
+
 ## ML Business Case
 
 - In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+
+### MalariaClf
+
+- We want an ML model to predict if a given leaf is healthy or contains powdery mildew., based on historical image data. It is a supervised model, a 2-class, single-label, classification model.
+
+???????
+- Our ideal outcome is to provide the medical team a faster and more reliable diagnostic for malaria detection.
+- The model success metrics are
+  - Accuracy of 65% or above on the test set.
+- The model output is defined as a flag, indicating if the cell has malaria or not and the associated probability of being infected or not. The medical staff will do the blood smear workflow as usual and upload the picture to the App. The prediction is made on the fly (not in batches).
+- Heuristics: The current diagnostic needs an experienced staff and detailed inspection to distinguish infected and not infected cells. A blood smear sample is collected, mixed with a reagent and examined under the microscope. Visual criteria are used to detect malaria parasites. It leaves room to produce inaccurate diagnostics due to human error. On top of that, some specific hospital facilities with malaria centres need more, trained staff and expertise and are typically understaffed.
+- The training data to fit the model come from the [National Institutes of Health (NIH) Website](https://ceb.nlm.nih.gov/repositories/malaria-datasets/). This dataset contains about 26+ thousand images. We have extracted a subset of 5643 images from this dataset and saved it to [Kaggle dataset directory](https://www.kaggle.com/codeinstitute/malaria-cell-classification/) for quicker model training.
+  - Train data - target: infected or not; features: all images
 
 ## Dashboard Design
 
@@ -94,9 +87,35 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Main Data Analysis and Machine Learning Libraries
 
-- Here, you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+- [Numpy](https://numpy.org/) 
+- [Pandas](https://pandas.pydata.org/)
+- [Matplotlib](https://matplotlib.org/)
+- [Seaborn](https://seaborn.pydata.org/)
+- [TensorFlow](https://www.tensorflow.org/)
 
 ## Credits
+
+- The walthrough project, Malaria Detector project done by Code Institute has been the code that was used to learn how to build this website.
+- The Malaria Detector project code has been used as the base and reference for building the NewsTok project. - [Malaria Detector](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSD101_WTS+2023_Q3/courseware/56a2da0940b4411d8a38c2b093a22c60/4565659a34d648b8b8edd063c3182180/)
+- bootstrap documentation was used for bootstrap research and references. [bootstrap docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+- Django documentation was used for Django research and references. [django docs](https://docs.djangoproject.com/en/5.0/)
+- w3schools was used for general code concept searches. [w3schools](https://www.w3schools.com/)
+- mdn web docs_ was used for general code concept searches. [mdn web docs_](https://developer.mozilla.org/en-US/)
+
+
+### MEDIA
+- Fonts used on the website. - [google fonts](https://fonts.google.com/) 
+- Fonts used on the website. - [font awesome](https://fontawesome.com/)
+- css used on the website. - [bootstrap](https://getbootstrap.com/)
+- Wireframes were created using Lucidchart's online wireframe maker. - [lucid chart](https://www.lucidchart.com/pages)
+- ERD models were also created using the Lucidchart's online ERD maker. - [lucid chart](https://www.lucidchart.com/pages)
+- Images used on the website. - [pexels](https://www.pexels.com/)
+- The logo used on the website was generated using IconGeneratorAI [icongeneratorai](https://www.icongeneratorai.com/)
+
+### PROJECT SUPPORT
+- I would like to thank my mentor Akshat Garg from Code Institute for his support, guidance, and help in planning and building this project.
+- I would like to thank all the Code Institute tutors for their support, guidance, and help in solving code issues, debugging, and solving all technical issues faced in building this project.
+- I would like to thank Code Institute for providing me with the necessary lessons and resources to help me build my skills to build this project.
 
 - In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
 - You can break the credits section up into Content and Media, depending on what you have included in your project.
