@@ -1,11 +1,4 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-## Template Instructions
-
-Welcome,
-
-This is the Code Institute student template for the Cherry Leaves project option in Predictive Analytics. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
+# MILDEW DETECTOR
 
 
 ## Dataset Content
@@ -56,6 +49,45 @@ To save time in this process, the IT team suggested an ML system that detects in
 - The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
 - The training data to fit the model come from the [cherry_leaves kaggle dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves). This dataset contains a total of 4208 images for both healthy and powdery mildew contained cherry leaves. 
   - Train data - target: healthy or not; features: all images
+
+## Cross Industry Standard Process for Data Mining (CRISP-DM)
+
+### Business understanding
+
+- Business case assessment provided by Code Institute.
+- The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
+- The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+
+### Data Understanding
+
+- Data collection.
+- Data from the Kaggle dataset was fetched and saved as raw data.
+
+### Data Preparation
+
+- Data cleaning: Check and remove non image files
+- Split train validation set
+- Set Image shape
+- Average and variability of images per label
+- Load image shapes and labels in an array 
+- Plot and save mean variability of images per label
+- Difference between average healthy and powdery mildew contained leaf
+- Image montage 
+- Image data augmentation
+
+### Modelling
+
+- Create model - Convolution Neural Network(CNN)
+- Fit created ML model with train set 
+- save model 
+
+### Evaluation
+
+- Plot model learning curve for model training loss and accuracy
+- Evaluate model on test set
+- Load random image to predict
+- Convert image to array and prepare for prediction.
+- Predict class probabilities and evaluate.
 
 ## Dashboard Design
 
