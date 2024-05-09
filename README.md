@@ -46,20 +46,16 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## ML Business Case
 
-- In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+### Powdery Mildew detetor
 
-### MalariaClf
-
-- We want an ML model to predict if a given leaf is healthy or contains powdery mildew., based on historical image data. It is a supervised model, a 2-class, single-label, classification model.
-
-???????
-- Our ideal outcome is to provide the medical team a faster and more reliable diagnostic for malaria detection.
-- The model success metrics are
-  - Accuracy of 65% or above on the test set.
-- The model output is defined as a flag, indicating if the cell has malaria or not and the associated probability of being infected or not. The medical staff will do the blood smear workflow as usual and upload the picture to the App. The prediction is made on the fly (not in batches).
-- Heuristics: The current diagnostic needs an experienced staff and detailed inspection to distinguish infected and not infected cells. A blood smear sample is collected, mixed with a reagent and examined under the microscope. Visual criteria are used to detect malaria parasites. It leaves room to produce inaccurate diagnostics due to human error. On top of that, some specific hospital facilities with malaria centres need more, trained staff and expertise and are typically understaffed.
-- The training data to fit the model come from the [National Institutes of Health (NIH) Website](https://ceb.nlm.nih.gov/repositories/malaria-datasets/). This dataset contains about 26+ thousand images. We have extracted a subset of 5643 images from this dataset and saved it to [Kaggle dataset directory](https://www.kaggle.com/codeinstitute/malaria-cell-classification/) for quicker model training.
-  - Train data - target: infected or not; features: all images
+- We want an ML model to predict if a given leaf is healthy or contains powdery mildew, based on historical image data. It is a supervised model, a 2-class, single-label, classification model.
+- Our ideal outcome is to provide Farmy & Foods, a faster and more reliable diagnostic for powdery mildew detection in cherry leaves to replace the currently used method of manually verifying samples.
+- The criteria for the performance goal of the predictions has been agreed to an accuracy of 97%.
+- The model output is defined as a flag, indicating if the leaf has powdery mildew or not and the associated probability of being affected or not. The Farmy & Foods staff will take a picture of a sample and upload it to the App. The prediction is made on the fly (not in batches).
+- Currently, the process is to manually verify if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If it has powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute. The company has thousands of cherry trees located in multiple farms across the country. As a result, this manual process is not scalable due to time spent in the manual process inspection.
+- The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
+- The training data to fit the model come from the [cherry_leaves kaggle dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves). This dataset contains a total of 4208 images for both healthy and powdery mildew contained cherry leaves. 
+  - Train data - target: healthy or not; features: all images
 
 ## Dashboard Design
 
