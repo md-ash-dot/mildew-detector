@@ -55,6 +55,10 @@ def page_leaf_visualizer_body():
           caption='Histogram of color values of average powdery mildew containing cherry leaf image.')
 
     if st.checkbox("Image Montage"): 
+      st.warning(
+            f"* We notice the image montage helps us to quickly visualize the healthy and powdery mildew "
+            f"containing leaves, we learn that powdery mildew is present present as white spots and patches "
+            f"across the surface of the leaves affected by it. ")
       st.write("* To refresh the montage, click on the 'Create Montage' button")
       my_data_dir = 'inputs/mildew_dataset/cherry-leaves'
       labels = os.listdir(my_data_dir+ '/validation')
