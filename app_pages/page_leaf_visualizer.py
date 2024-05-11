@@ -12,7 +12,7 @@ import random
 def page_leaf_visualizer_body():
     st.write("### Leaf Visualizer")
     st.info(
-        f"* The client is interested in having a study that visually "
+        f"* Business requirement 1 has been addressed by conducting a study that visually "
         f"differentiates a powdery mildew affected leaf from an healthy leaf.")
     
     version = 'v1'
