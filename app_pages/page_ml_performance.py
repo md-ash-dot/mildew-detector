@@ -8,6 +8,8 @@ from src.machine_learning.evaluate_clf import load_test_evaluation
 def page_ml_performance_metrics():
     version = 'v1'
 
+    st.write("## Ml Performance Metrics")
+
     st.write("### Average Image size in dataset")
 
     average_image_size = plt.imread(f"outputs/{version}/avg_img_size.png")

@@ -55,7 +55,8 @@ To save time in this process, the IT team suggested an ML system that detects in
 - **Business Requirement 2**: Classification
 
 1. The client wants an ML system that is capable of predicting whether a cherry leaf is healthy or contains powdery mildew. 
-  - We will build a binary classifier and generate reports.
+  - We will build a binary classifier Ml model and generate reports.
+  - We will evaluate the performance of tge Ml model for loss and accuracy.
   - We will predict if a given leaf is healthy or contains powdery mildew on new data.
 
 ## ML Business Case
@@ -72,6 +73,8 @@ To save time in this process, the IT team suggested an ML system that detects in
   - Train data - target: healthy or not; features: all images
 
 ## Cross Industry Standard Process for Data Mining (CRISP-DM)
+
+CRISP-DM was used in developing this project.
 
 ### Business understanding
 
@@ -111,6 +114,28 @@ To save time in this process, the IT team suggested an ML system that detects in
 - Predict class probabilities and evaluate.
 
 ## Dashboard Design
+
+- PAGES ON DASHBOARD
+
+  1. Quick Project Summary
+    - General info
+    - Project Dataset
+    - Business requirements
+  2. Leaf Visualizer
+    - Difference between average and variability image
+    - Differences between average healthy and average powdery mildew affected leaves
+    - Histogram of color values of average leaf image
+    - Image Montage
+  3. Mildew Detection
+    - Image uploader
+  4. Project Hypothesis
+    - Hypothesises
+  5. Ml performace metrics
+    - Average Image size in dataset
+    - Train, Validation and Test Set: Labels Frequencies
+    - Sunburst nested pie plot - Train, Validation and Test Set: Labels Frequencies
+    - Model History
+    - Generalised Performance on Test Set
 
 - List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
 - Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
