@@ -175,15 +175,38 @@ CRISP-DM was used in developing this project.
 - List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
 - Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
 
-## Unfixed Bugs
+## Dashboard Testing
 
-- You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+Manual testing of the dashboard was carried out using the steps below.
+
+### MENU 
+- The menu sidebar radio buttons were tested to see if the coressponding pages loaded.
+- The menu sidebar was tested by closing and opening it while using the dashboard.
+#### QUICK PAGE SUMMARY
+- The link to this readme file on the quick page summary page was tested.
+- The general information and business requirements sections were checked to see if it was diplayed correctly.
+### LEAF VISUALIZER
+- All the checkboxes in the leaf visualizer pages were tested to see if it diplayed the inferences and images of the plots.
+- The image montage section was tested to see if it diplayed the right image monatges when the healthy and powdery_mildew labels were selected and the create montage button was clicked.
+### MILDEW DETECTION
+- The business requirement information was checked to see if it was displayed correctly.
+- The link to the dataset to get images to download for testing the model was tested .
+- The image uploader was tested by uploading single and multiple images of .png and .jpeg formats.
+- The prediction was tested to see if the prediction message was displayed along with the diagnostic plot of probability and analysis report.
+- The link to download the report as csv was tested.
+### PROJECT HYPOTHESIS
+- The hypothesises , validations and inferenences were checked if it was displayed correctly.
+- The Business requirements answered by the hypothesises were checked if it was displayed correctly.
+### ML PERFORMANCE METRICS
+- The Ml performace was checked to see if all images of plots were displayed.
+- The inferences of the plots were checked if it was displayed correctly.
+- The generalized performance on test dataframe was checked if it was displayed correctly.
 
 ## Deployment
 
 ### Heroku
 
-- The App live link is: `https://YOUR_APP_NAME.herokuapp.com/`
+- The App live link is: [Mildew Detector Live](https://powdery-mildew-detector-live-3a7db6791eea.herokuapp.com/)
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps.
 
@@ -196,17 +219,18 @@ CRISP-DM was used in developing this project.
 
 ## Main Data Analysis and Machine Learning Libraries
 
-- [Numpy](https://numpy.org/) 
-- [Pandas](https://pandas.pydata.org/)
-- [Matplotlib](https://matplotlib.org/)
-- [Seaborn](https://seaborn.pydata.org/)
-- [TensorFlow](https://www.tensorflow.org/)
+- [Numpy](https://numpy.org/) A Python library for numerical computations, facilitating efficient array operations and mathematical functions.
+- [Pandas](https://pandas.pydata.org/) A Python library for data manipulation and analysis, offering powerful data structures and functions for working with structured data.
+- [Matplotlib](https://matplotlib.org/) A Python library for creating static, interactive, and publication-quality visualizations, widely used for plotting graphs, charts, and histograms.
+- [Seaborn](https://seaborn.pydata.org/) A Python library for statistical data visualization, built on top of Matplotlib, providing a high-level interface for creating attractive and informative statistical graphics.
+- [Plotly](https://plotly.com/python/) A Python library for creating interactive and publication-quality visualizations, ranging from basic charts to complex dashboards.
+- [TensorFlow](https://www.tensorflow.org/) A Python library for building and training machine learning models, offering flexibility and scalability for various tasks like deep learning, neural networks, and numerical computations.
 
 ## Softwares used
 
-- Python
-- Juputer Notebooks
-- Streamlit 
+- [Python](https://www.python.org/) A versatile and powerful programming language used for web development, data analysis, artificial intelligence, scripting, and more.
+- [Juputer Notebooks](https://jupyter.org/) An interactive computing environment that allows users to create and share documents containing live code, equations, visualizations, and narrative text, ideal for data exploration, analysis, and collaboration.
+- [Streamlit](https://streamlit.io/) A Python library for building interactive web applications with simple Python scripts, enabling rapid prototyping and deployment of data-driven apps.
 
 ## Credits
 
