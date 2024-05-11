@@ -202,6 +202,22 @@ Manual testing of the dashboard was carried out using the steps below.
 - The inferences of the plots were checked if it was displayed correctly.
 - The generalized performance on test dataframe was checked if it was displayed correctly.
 
+### BUGS OR ERRORS
+
+- Plotly Sunburst figure plot showed double the frequency.
+  - Drop duplicates to display correct frequency. df_freq.drop_duplicates(subset=['Set', 'Label'], keep='first', inplace=True)
+- Blank images saved when using
+  plt.savefig(f'{file_path}/labels_sunburst_distribution.png',
+              bbox_inches='tight', dpi=150)
+  so used, 
+  - save sunburst plot figure as static image in output directory
+    fig.write_image(f'{file_path}/labels_sunburst_distribution.png', format="png", scale=2)
+- Was unable to push files to github repo because file size was too large and exceeded github limit, tried using git LFS and was unable to push to repo after that.
+  - Removed previous commit, lost all my work and got error that it did not have permission to the directory, so uninstalled git LFS and removed the data in .gitattributes and tried again. Was able to push files to github repo. Cleared the plotly plot jupyter notebooks cell outputs. The file size was small again and pushed to github repository without any issues.
+ 
+
+
+
 ## Deployment
 
 ### Heroku
