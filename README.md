@@ -17,7 +17,24 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Hypothesis and how to validate?
 
-- List here your project hypothesis(es) and how you envision validating it (them).
+1. - Healthy cherry leaves look fresh and green across the entire surface of leaf.
+  - Created image monatge of healthy and powdery mildew containing cherry leaves.
+  - Plotted a histogram of color values of average healthy and powdery mildew containing cherry leaves.
+
+2. - Disntinct feautures in Variability of cherry leaves containing Powdery Mildew.
+  - Displayed plot of mean and standard deviation of cherry leaves containing Powdery Mildew.
+
+3. - Absence of white spots and discolouration in Variability of Healthy cherry leaves.
+  - Displayed plot of mean and standard deviation of healthy cherry leaves.
+
+4. - Patterns from difference between the averages of Healthy and Powdery Mildew containg cherry leaves helps to differentiate them.
+  - Displayed plot of difference between mean healthy and mean powdery mildew cherry leaves.
+
+5. - A Machine learning model can be created with the dataset provided to predict if a leaf contains powdery Mildew.
+  - Created and trained a tensor flow CNN convolution neural network model.
+  - Evaluated model performance for an accuracy of 99.76%.
+  - Predicted successfully using the trained model on new data.
+
 
 - The available dataset contains 4208 images of healthy and powdery mildew containing leaves.
 
@@ -25,17 +42,16 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
-- List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
-
 - **Business Requirement 1**: Data Visualization
 
   - We will display the "mean" and "standard deviation" images for healthy and powdery mildew contained leaves.
   - We will display the difference between an average healthy leaf and an powdery mildew contained leaf.
+  - We will display the histogram of colour values of the average healthy leaf and powdery mildew contained leaf images. 
   - We will display an image montage for either healthy or owdery mildew contained leaves.
 
 - **Business Requirement 2**: Classification
   - We want to predict if a given leaf is healthy or contains powdery mildew.
-  - We want to build a binary classifier and generate reports.
+  - We will build a binary classifier and generate reports.
 
 ## ML Business Case
 
