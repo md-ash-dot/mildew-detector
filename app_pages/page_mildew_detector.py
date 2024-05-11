@@ -13,7 +13,8 @@ from src.machine_learning.predictive_analysis import (
 def page_mildew_detector_body():
     st.write("### Mildew Detection")
     st.info(
-        f"* The client is interested in telling whether a given cherry leaf is healthy or contains powdery mildew."
+        f"* Business requirement 2 has been addressed by delivering a Machine learning model which the client "
+        f"can use in telling whether a given cherry leaf is healthy or contains powdery mildew."
         )
 
     st.write(
