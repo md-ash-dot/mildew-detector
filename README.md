@@ -61,7 +61,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## ML Business Case
 
-### Powdery Mildew detetor
+### Powdery Mildew detector
 
 - We want an ML model to predict if a given leaf is healthy or contains powdery mildew, based on historical image data. It is a supervised model, a 2-class, single-label, classification model.
 - Our ideal outcome is to provide Farmy & Foods, a faster and more reliable diagnostic for powdery mildew detection in cherry leaves to replace the currently used method of manually verifying samples.
@@ -115,27 +115,62 @@ CRISP-DM was used in developing this project.
 
 ## Dashboard Design
 
+- MENU
+  - The menu is made using st.sidebar.radio. It displays all the available page of the dahsboard.
+  - The pages of the dashboard can be accessed by selecting the radio button of the coressponding page.
+  - The sidebar menu can be closed or opened at any time while using the dashboard.
+  ![Menu](/dashboard_images/menu.png)
+
 - PAGES ON DASHBOARD
 
   1. Quick Project Summary
-    - General info
-    - Project Dataset
-    - Business requirements
+    - The quick project summary pages helps in displaying a brief summary of the project. 
+    - This page uses st.write and st.success to highlight the information of the page.
+    ![Project Summary](/dashboard_images/summary.png)
+    - General information of the project is listed.
+    - Project Dataset information and the size of dataset is listed.
+    - A link to this readme file is also listed for further information.  
+    - Business requirements of the client are listed.
+
   2. Leaf Visualizer
-    - Difference between average and variability image
-    - Differences between average healthy and average powdery mildew affected leaves
-    - Histogram of color values of average leaf image
-    - Image Montage
+    - The leaf visualizer page displays all the images of plots created to visualize the data.
+    - This page uses st.checkbox to display the selected sections of the page and st.selectbox for the image montage section to select the class of cherry leaf.
+    - This page uses st.warning to highlight information and st.image to display images.
+    ![Leaf Visualizer](/dashboard_images/visualizer.png)
+    - Difference between average and variability image shows the plot used to display the average and variability of the cherry leaves of the two classes.
+    ![Variability](/dashboard_images/variability.png)
+    - Differences between average healthy and average powdery mildew affected leaves plot is displayed.
+    - Histogram of color values of average leaf image of both classes is displayed.
+    - Image Montage displays a montage of the selected class.
+    ![Image Montage](/dashboard_images/montage.png)
+
   3. Mildew Detection
-    - Image uploader
+    - This page displays an file uploader and displays the prediction after an upload along with a downloadable report.
+    - This page uses st.write and st.info, st.success to highlight information.
+    - This page uses st.file_uploader for the image uploader for prediction of cherry leaf samples.
+    - This page uses st.table for the report and st.markdown for downloadable report.
+    - Image uploader is used to upload the image to predict a sample leaf. Images of .png and .jpeg can be uploaded. Multiples images can be uploaded at the same time.
+    ![Uploader](/dashboard_images/uploader.png)
+    - Prediction is done after the image is uploaded and the prediction message is diplayed showing if the cherry leaf is healthy or not. It also shows the diagnostic graph of how it has predicted the sample image.
+    ![Prediction](/dashboard_images/prediction.png)
+    - Report of the prediction can be downloaded locally as a csv file and the analysis report is also displayed in the dashboard.
+    ![Report](/dashboard_images/report.png)
+
   4. Project Hypothesis
-    - Hypothesises
+    - This page uses st.write and st.success, st.info to highlight information on the page.
+    - Hypothesises and validation are listed along with it's inferences.
+    ![Hypothesis](/dashboard_images/hypothesis.png)
+
   5. Ml performace metrics
-    - Average Image size in dataset
-    - Train, Validation and Test Set: Labels Frequencies
-    - Sunburst nested pie plot - Train, Validation and Test Set: Labels Frequencies
-    - Model History
-    - Generalised Performance on Test Set
+    - This page uses st.write and st.info to highlight information on the page.
+    - This page uses st.image to display the images of the plots.
+    - this page uses st.dataframe to display the test evaluation performance results.
+    ![Ml performace metrics](/dashboard_images/metrics.png)
+    - Average Image size in dataset is displayed using the image of the plot.
+    - Train, Validation and Test Set: Labels Frequencies are displayed using the image of the barplot.
+    - Sunburst nested pie plot - Train, Validation and Test Set: Labels Frequencies are displayed using the image of the sunburst plot.
+    - Model History displays the Ml model learning curve.
+    - Generalised Performance on Test Set displays the loss and accuracy performance figures.
 
 - List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
 - Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
