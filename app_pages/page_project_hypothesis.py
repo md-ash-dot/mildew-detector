@@ -10,12 +10,15 @@ def page_project_hypothesis_body():
     )
     st.info(
         f"This hypothesis proved to be right.\n"
-        f"* Created image monatge of healthy and powdery mildew containing cherry leaves. "
+        f"* Created image monatge of healthy and powdery mildew containing cherry leaves.\n"
+        f"* Plotted a histogram of color values of average healthy and powdery mildew containing cherry leaves. "
     )
     st.write(
-        f"We have found through the image monatge of images of the cherry leaves, the leaves are very green across "
-        f"the entire surface of the leaf compared to cherry leaves with powdery mildew in it. While the leaves with "
-        f"Powdery Mildew have discloration on various spots or throughout the entire leaf.  "
+        f"We have found through the image monatge of images of the cherry leaves and histogram of "
+        f"color values of average healthy and powdery mildew containing cherry leaves, the green channel had a wider"
+        f"range in healthy cherry leaves and predominantly green across the entire surface of the leaf "
+        f"compared to cherry leaves with powdery mildew in it. While the leaves with Powdery Mildew have discloration "
+        f"on various spots or throughout the entire leaf.  "
     )
 
     st.success(

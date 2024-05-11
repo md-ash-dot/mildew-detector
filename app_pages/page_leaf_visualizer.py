@@ -37,9 +37,22 @@ def page_leaf_visualizer_body():
           diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
           st.warning(
-            f"* We notice this study didn't show "
+            f"* We notice this study shows "
             f"patterns where we could intuitively differentiate one from another.")
           st.image(diff_between_avgs, caption='Difference between average images')
+
+    if st.checkbox("Histogram of color values of average leaf images"):
+          healthy_histogram = plt.imread(f"outputs/{version}/healthy_hist.png")
+          mildew_histogram = plt.imread(f"outputs/{version}/mildew_hist.png")
+
+          st.warning(
+            f"* We notice this study shows the green color channel values in average healthy cherry "
+            f"leaves image are found across a wider range than in average powdery mildew containg cherry "
+            f"leaves. ")
+          st.image(healthy_histogram, 
+          caption='Histogram of color values of average healthy cherry leaf image.')
+          st.image(mildew_histogram, 
+          caption='Histogram of color values of average powdery mildew containing cherry leaf image.')
 
     if st.checkbox("Image Montage"): 
       st.write("* To refresh the montage, click on the 'Create Montage' button")
