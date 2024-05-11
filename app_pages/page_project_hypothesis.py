@@ -9,7 +9,8 @@ def page_project_hypothesis_body():
         f"* Healthy cherry leaves look fresh and green across the entire surface of leaf " 
     )
     st.info(
-        f"This hypothesis proved to be right. "
+        f"This hypothesis proved to be right.\n"
+        f"* Created image monatge of healthy and powdery mildew containing cherry leaves. "
     )
     st.write(
         f"We have found through the image monatge of images of the cherry leaves, the leaves are very green across "
@@ -21,7 +22,8 @@ def page_project_hypothesis_body():
         f"* Disntinct feautures in Variability of cherry leaves containing Powdery Mildew " 
     )
     st.info(
-        f"This hypothesis proved to be right. "
+        f"This hypothesis proved to be right.\n"
+        f"* Displayed plot of mean and standard deviation of cherry leaves containing Powdery Mildew. "
     )
     st.write(
         f"We have found through the average variability of images of powdery mildew containing cherry leaves, "
@@ -35,7 +37,8 @@ def page_project_hypothesis_body():
         f"* Absence of white spots and discolouration in Variability of Healthy cherry leaves " 
     )
     st.info(
-        f"This hypothesis proved to be right. "
+        f"This hypothesis proved to be right.\n"
+        f"* Displayed plot of mean and standard deviation of healthy cherry leaves."
     )
     st.write(
         f"We have found through the average variability of images of healthy cherry leaves, typically the leaves are fresh "
@@ -48,7 +51,8 @@ def page_project_hypothesis_body():
         f"* Patterns from difference between the averages of Healthy and Powdery Mildew containg cherry leaves helps to differentiate them." 
     )
     st.info(
-        f"This hypothesis proved to be right. "
+        f"This hypothesis proved to be right.\n"
+        f"* Displayed plot of difference between mean healthy and mean powdery mildew cherry leaves."
     )
     st.write(
         f"We have found through the study of difference between the averages of Healthy and Powdery Mildew containg cherry leaves, "
@@ -57,15 +61,31 @@ def page_project_hypothesis_body():
         f"distinctive patterns through this study. "
     )
 
+    st.warning(
+        f"Business requirement 1 of client has been met. Our study has analysed:\n"
+        f"* Average images and variability images for each class (healthy or powdery mildew).\n"  
+        f"* The differences between average healthy and average powdery mildew cherry leaves.\n"
+        f"* An image montage for each class."
+    )
+
     st.success(
         f"* A Machine learning model can be created with the dataset provided to predict if a leaf contains powdery Mildew." 
     )
     st.info(
-        f"This hypothesis proved to be right. "
+        f"This hypothesis proved to be right.\n"
+        f"* Created and trained a tensor flow CNN convolution neural network model.\n"
+        f"* Evaluated model performance for an accuracy of 99.76%.\n"
+        f"* Predicted successfully using the trained model on new data."
     )
     st.write(
         f"The disntinctive features of healthy and powdery mildew containing leaves which could be manually tested currently "
         f"could be used to train a ML model. A CNN convolution neural network model was able to be trained from the images "
         f"in the dataset and augmented images generated. And the model was able to successfully predict from uploaded images "
         f"of sample leaves and tell if it contained powdery mildew at successful accuracy of 99.76%. "
+    )
+
+    st.warning(
+        f"Business requirement 2 of client has been met. An ML system that is capable of predicting whether a cherry leaf "
+        f"is healthy or contains powdery mildew has been delivered using Neural Networks to map the relationships between the "  
+        f"features and the labels. In our case a CNN Convolution neural network was used. "
     )
