@@ -44,14 +44,19 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 - **Business Requirement 1**: Data Visualization
 
+1. The client wants to see average images and variability images for each class (healthy or powdery mildew).
   - We will display the "mean" and "standard deviation" images for healthy and powdery mildew contained leaves.
+2. The client wants to see the differences between average healthy and average powdery mildew cherry leaves.
   - We will display the difference between an average healthy leaf and an powdery mildew contained leaf.
   - We will display the histogram of colour values of the average healthy leaf and powdery mildew contained leaf images. 
-  - We will display an image montage for either healthy or owdery mildew contained leaves.
+3. The client wants to see an image montage for each class.
+  - We will display an image montage for either healthy or powdery mildew contained leaves.
 
 - **Business Requirement 2**: Classification
-  - We want to predict if a given leaf is healthy or contains powdery mildew.
+
+1. The client wants an ML system that is capable of predicting whether a cherry leaf is healthy or contains powdery mildew. 
   - We will build a binary classifier and generate reports.
+  - We will predict if a given leaf is healthy or contains powdery mildew on new data.
 
 ## ML Business Case
 
